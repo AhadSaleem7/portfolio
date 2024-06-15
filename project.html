@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="bestcss.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Khushi's Portfolio</div>
+            <div>
+                <ul>
+                    <li><a class="link" href="BestPortfolioWebsite.html">home</a></li>
+                    <li><a class="link" href="about.html">about</a></li>
+                    <li><a class="link" href="BestPortfolioWebsite.html">services</a></li>
+                    <li><a class="link" href="project.html">projects</a></li>
+                    <li><a class="link" href="contact.html">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+                <section class="left">
+                    <button type="button" class="collapsible">PROJECTS ⬇️ (click me 😉)</button>
+                    <div class="content">
+                        <p>
+                        <div style="color: gold;">1 : <a href="https://www.apunkagames.com/">Games Website 🎮</a></div>
+                        <div style="color: gold;">2 : <a href="https://amoviesverse.co/">Movies Website 🎥</a></div>
+                        <div style="color: gold;">3 : <a href="https://venettodesign.com/">Product Based Website 🛋️</a>
+                        </div>
+
+                        </p>
+                    </div>
+                    <div class="example12">
+                        <img class="example1"
+                            src="https://cdn.dribbble.com/users/4096059/screenshots/14606931/media/84e0fac9d09aba24cec0440796ab49ad.png?resize=1200x900&vertical=center"
+                            alt="img not found"><img>
+                        <img class="example2"
+                            src="https://djdesignerlab.com/wp-content/uploads/2020/08/modern-website-design-03.png"
+                            alt="img not found"><img>
+                    </div>
+                    <div class="example34">
+                        <img class="example3"
+                            src="https://cdn.dribbble.com/userupload/4984777/file/original-955255c815881cf7bea5820d1cab737f.png?resize=1504x1023"
+                            alt="img not found"><img>
+                        <img class="example4"
+                            src="https://colorlib.com/wp/wp-content/uploads/sites/2/restaurant-free-restaurant-website-template.jpg"
+                            alt="img not found"><img>
+                    </div>
+                </section>
+                <section class="right">
+                    <div>
+                        <img class="khushi"
+                            src="https://th.bing.com/th/id/OIG3.D75Uo0skKtQB3efA3e6I?w=1024&h=1024&rs=1&pid=ImgDetMain"
+                            alt="image not found "></img>
+                    </div>
+                    <br><br>
+                    <iframe width="324" height="244" src="https://www.youtube.com/embed/tQUIzefwpNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </section>
+        </section>
+    </main>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="bestjs.js"></script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+
+    </script>
+
+
+</body>
+
+</html>
