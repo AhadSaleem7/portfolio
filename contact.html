@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+  <link rel="stylesheet" href="bestcss.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">Khushi's Portfolio</div>
+      <div>
+        <ul>
+          <li><a class="link" href="BestPortfolioWebsite.html">home</a></li>
+          <li><a class="link" href="about.html">about</a></li>
+          <li><a class="link" href="BestPortfolioWebsite.html">services</a></li>
+          <li><a class="link" href="project.html">projects</a></li>
+          <li><a class="link" href="contact.html">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="first">
+      <section class="left">
+        <form onsubmit="sendEmail(); reset(); return false ;">
+          <div class="mb-3">
+            <h1 class="form0">Contact Me For General Queries/Work</h1>
+            <br><br>
+            <label for="clientemail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+            <br><br>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <br>
+          </div>
+          <div class="mb-3">
+            <label for="clientphone" class="form-label">Phone</label>
+            <input type="phone" class="form-control" id="clientphone">
+            <br><br>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="isclient">
+            <label class="form-check-label" for="isclient">I want you to work on a project with me</label>
+          </div>
+          <br><br>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </section>
+      <section class="right">
+        <img class="khushi" src="https://i.pinimg.com/originals/a9/53/8d/a9538deae0a544090608683388cc3a22.png"
+          alt="image not found">
+      </section>
+  </main>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "ahadbbk9@gmail.com",
+        Password: "F7CE291ADE31B674930C33DC04278C24DAE1",
+        To: 'ahadbbk9@gmail.com',
+        From: document.getElementById("clientemail").value,
+        Subject: "This is the subject",
+        Body: "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+    }
+  </script>
+</body>
+
+</html>
