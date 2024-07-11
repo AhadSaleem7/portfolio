@@ -29,23 +29,24 @@
   <main>
     <section class="first">
       <section class="left">
-        <form onsubmit="sendEmail(); reset(); return false ;">
+        <form action="https://api.web3forms.com/submit" method="POST">
           <div class="mb-3">
             <h1 class="form0">Contact Me For General Queries/Work</h1>
             <br><br>
+            <input type="hidden" name="access_key" value="b8424cef-a36b-421d-9d37-42280b6fdd78">
             <label for="clientemail" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+            <input type="email" name="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
             <br><br>
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             <br>
           </div>
           <div class="mb-3">
             <label for="clientphone" class="form-label">Phone</label>
-            <input type="phone" class="form-control" id="clientphone">
+            <input type="phone" name="Phone" class="form-control" id="clientphone">
             <br><br>
           </div>
           <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="isclient">
+            <input type="checkbox" name="checkbox" class="form-check-input" id="isclient">
             <label class="form-check-label" for="isclient">I want you to work on a project with me</label>
           </div>
           <br><br>
@@ -57,22 +58,7 @@
           alt="image not found">
       </section>
   </main>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    function sendEmail() {
-      Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "ahadbbk9@gmail.com",
-        Password: "F7CE291ADE31B674930C33DC04278C24DAE1",
-        To: 'ahadbbk9@gmail.com',
-        From: document.getElementById("clientemail").value,
-        Subject: "This is the subject",
-        Body: "And this is the body"
-      }).then(
-        message => alert(message)
-      );
-    }
-  </script>
+ 
 </body>
 
 </html>
