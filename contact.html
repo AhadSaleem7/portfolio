@@ -35,14 +35,15 @@
             <br><br>
             <input type="hidden" name="access_key" value="b8424cef-a36b-421d-9d37-42280b6fdd78">
             <label for="clientemail" class="form-label">Email address</label>
-            <input type="email" name="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+            <input type="email" name="email" class="form-control" id="clientemail" aria-describedby="emailHelp" required>
             <br><br>
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             <br>
           </div>
           <div class="mb-3">
             <label for="clientphone" class="form-label">Phone</label>
-            <input type="phone" name="Phone" class="form-control" id="clientphone">
+            <input type="tel" name="phone" class="form-control" id="clientphone" pattern="[0-9]{10}" required>
+            <small>Format: 10 digits (e.g., 1234567890)</small>
             <br><br>
           </div>
           <div class="mb-3 form-check">
